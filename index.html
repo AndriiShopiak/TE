@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Англійський репетитор — Візитка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Навігація -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="./img/funny_logo.png" alt="FunnyEnglish Logo">
+      </div>
+      <nav>
+        <a href="#about">Про мене</a>
+        <a href="#services">Послуги</a>
+        <a href="#testimonials">Відгуки</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn" style="margin-left:16px;">Записатися</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero секція -->
+    <section id="hero" class="container hero">
+      <div class="hero-text">
+        <h1>Англійська <span class="aqua">без</span> стресу</h1>
+        <p class="pacifico-regular">Індивідуальні заняття, підготовка до іспитів, розмовна практика.</p>
+        <a href="#contact" class="btn">Записатися на пробний урок</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://res.cloudinary.com/dzroq0tzf/image/upload/v1752128882/samples/two-ladies.jpg" alt="Фото репетитора">
+      </div>
+    </section>
+
+    <!-- Про мене -->
+    <section id="about" class="fade-in">
+      <div class="container">
+        <h2>Про мене</h2>
+        <p class="pacifico-regular">Мене звати Анна. Я допомагаю дорослим і підліткам впевнено заговорити англійською. Працюю за комунікативною методикою, акцент на практиці та цілях студента. Сертифікати: TESOL, IELTS C1.</p>
+      </div>
+    </section>
+
+    <!-- Послуги -->
+    <section id="services" class="fade-in">
+      <div class="container">
+        <h2>Послуги</h2>
+        <div class="grid cols-3">
+          <div class="card service">
+            <h3>Індивідуальні онлайн-заняття</h3>
+            <p class="open-sans">60 хвилин, програма під ваші цілі. Домашні завдання та матеріали включені.</p>
+          </div>
+          <div class="card service">
+            <h3>Підготовка до іспитів (ZNO / IELTS)</h3>
+            <p class="open-sans">Структурований план, практика speaking & writing, типові пастки та техніки.</p>
+          </div>
+          <div class="card service">
+            <h3>Розмовний клуб</h3>
+            <p class="open-sans">Малі групи до 5 людей. Тематичні зустрічі 1–2 рази на тиждень.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Відгуки -->
+    <section id="testimonials" class="fade-in">
+      <div class="container">
+        <h2>Відгуки учнів</h2>
+        <div class="grid cols-2">
+          <div class="card testimonial">
+            <div class="avatar">O</div>
+            <div>
+              <strong>Олена</strong>
+              <p class="open-sans">За 3 місяці підготувалась до співбесіди англійською та отримала роботу. Дуже рекомендую!</p>
+            </div>
+          </div>
+          <div class="card testimonial">
+            <div class="avatar">M</div>
+            <div>
+              <strong>Максим</strong>
+              <p class="open-sans">Подобаються чітка структура та практика говоріння на кожному уроці. Видно прогрес.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="fade-in">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Скільки триває урок?</summary>
+          <p class="open-sans">Стандартно 60 хвилин. Можливі формати 45/90 хв за домовленістю.</p>
+        </details>
+        <details>
+          <summary>Як проходить оплата?</summary>
+          <p class="open-sans">Переказ на картку перед заняттям або абонементом на місяць.</p>
+        </details>
+        <details>
+          <summary>Чи можна скасувати урок?</summary>
+          <p class="open-sans">Так, не пізніше ніж за 12 годин до початку заняття.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact" class="fade-in">
+      <div class="container">
+        <h2>Записатися на пробний урок</h2>
+        <form onsubmit="event.preventDefault(); alert('Дякуємо! Ми з вами звʼяжемося.'); this.reset();">
+          <input type="text" name="name" placeholder="Ваше імʼя" required>
+          <input type="email" name="email" placeholder="Email або Telegram" required>
+          <textarea name="message" rows="4" placeholder="Коротко про ваші цілі"></textarea>
+          <button class="btn" type="submit">Надіслати</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 English Tutor. Зроблено з турботою.
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll для навігації
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Ефект появи тексту при скролі
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+  </script>
+</body>
+</html>
