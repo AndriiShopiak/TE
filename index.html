@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Англійський репетитор — Візитка</title>
+  <title>Репетитор англійської мови | Індивідуальні заняття онлайн | Анна</title>
+  <meta name="description" content="Професійний репетитор англійської мови. Індивідуальні онлайн-заняття, підготовка до ZNO та IELTS, розмовний клуб. Сертифікати TESOL, IELTS C1.">
+  <meta name="keywords" content="репетитор англійської, англійська мова онлайн, підготовка до ZNO, IELTS, розмовна практика, TESOL">
+  <meta name="author" content="Анна - репетитор англійської мови">
+  <meta property="og:title" content="Репетитор англійської мови | Індивідуальні заняття онлайн">
+  <meta property="og:description" content="Професійний репетитор англійської мови. Індивідуальні онлайн-заняття, підготовка до ZNO та IELTS.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <link rel="canonical" href="https://your-domain.com">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,28 +19,42 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <img src="./img/funny_logo.png" alt="FunnyEnglish Logo">
+        <img src="./img/funny_logo.png" alt="FunnyEnglish Logo - Репетитор англійської мови" width="100" height="100">
+        <span class="brand-text">Анна English</span>
       </div>
-      <nav>
+      
+      <!-- Мобільна кнопка меню -->
+      <button class="mobile-menu-toggle" aria-label="Відкрити меню" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <nav class="nav-menu">
         <a href="#about">Про мене</a>
         <a href="#services">Послуги</a>
+        <a href="#pricing">Ціни</a>
         <a href="#testimonials">Відгуки</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn" style="margin-left:16px;">Записатися</a>
+        <a href="#contact" class="btn nav-btn">Записатися</a>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- Hero секція -->
-    <section id="hero" class="container hero">
+    <section id="hero" class="container hero" role="banner">
       <div class="hero-text">
         <h1>Англійська <span class="aqua">без</span> стресу</h1>
         <p class="pacifico-regular">Індивідуальні заняття, підготовка до іспитів, розмовна практика.</p>
         <a href="#contact" class="btn">Записатися на пробний урок</a>
       </div>
       <div class="hero-image">
-        <img src="https://res.cloudinary.com/dzroq0tzf/image/upload/v1752128882/samples/two-ladies.jpg" alt="Фото репетитора">
+        <img src="https://res.cloudinary.com/dzroq0tzf/image/upload/v1752128882/samples/two-ladies.jpg" 
+             alt="Професійний репетитор англійської мови Анна на онлайн-занятті" 
+             loading="lazy"
+             width="500"
+             height="400">
       </div>
     </section>
 
@@ -62,6 +84,50 @@
             <p class="open-sans">Малі групи до 5 людей. Тематичні зустрічі 1–2 рази на тиждень.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Ціни -->
+    <section id="pricing" class="fade-in">
+      <div class="container">
+        <h2>Ціни</h2>
+        <div class="grid cols-3">
+          <div class="card pricing-card">
+            <h3>Пробний урок</h3>
+            <div class="price">Безкоштовно</div>
+            <ul class="open-sans">
+              <li>30 хвилин</li>
+              <li>Оцінка рівня</li>
+              <li>План навчання</li>
+              <li>Знайомство з методикою</li>
+            </ul>
+            <a href="#contact" class="btn">Записатися</a>
+          </div>
+          <div class="card pricing-card featured">
+            <h3>Індивідуальні заняття</h3>
+            <div class="price">₴800<span>/урок</span></div>
+            <ul class="open-sans">
+              <li>60 хвилин</li>
+              <li>Персональна програма</li>
+              <li>Домашні завдання</li>
+              <li>Матеріали включені</li>
+              <li>Підтримка між уроками</li>
+            </ul>
+            <a href="#contact" class="btn">Записатися</a>
+          </div>
+          <div class="card pricing-card">
+            <h3>Розмовний клуб</h3>
+            <div class="price">₴200<span>/заняття</span></div>
+            <ul class="open-sans">
+              <li>90 хвилин</li>
+              <li>Група до 5 людей</li>
+              <li>Тематичні обговорення</li>
+              <li>1-2 рази на тиждень</li>
+            </ul>
+            <a href="#contact" class="btn">Записатися</a>
+          </div>
+        </div>
+        <p class="pricing-note open-sans">* Абонемент на місяць - знижка 10%</p>
       </div>
     </section>
 
@@ -104,6 +170,14 @@
           <summary>Чи можна скасувати урок?</summary>
           <p class="open-sans">Так, не пізніше ніж за 12 годин до початку заняття.</p>
         </details>
+        <details>
+          <summary>Який рівень англійської потрібен для початку?</summary>
+          <p class="open-sans">Працюю з будь-яким рівнем - від початківця до Advanced. Підберу програму під ваші потреби.</p>
+        </details>
+        <details>
+          <summary>Чи потрібні додаткові матеріали?</summary>
+          <p class="open-sans">Всі необхідні матеріали надаю безкоштовно. Використовую сучасні підручники та інтерактивні ресурси.</p>
+        </details>
       </div>
     </section>
 
@@ -111,23 +185,146 @@
     <section id="contact" class="fade-in">
       <div class="container">
         <h2>Записатися на пробний урок</h2>
-        <form onsubmit="event.preventDefault(); alert('Дякуємо! Ми з вами звʼяжемося.'); this.reset();">
-          <input type="text" name="name" placeholder="Ваше імʼя" required>
-          <input type="email" name="email" placeholder="Email або Telegram" required>
-          <textarea name="message" rows="4" placeholder="Коротко про ваші цілі"></textarea>
-          <button class="btn" type="submit">Надіслати</button>
-        </form>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Контактна інформація</h3>
+            <div class="contact-item">
+              <strong>📧 Email:</strong>
+              <a href="mailto:anna.english.tutor@gmail.com">anna.english.tutor@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <strong>📱 Telegram:</strong>
+              <a href="https://t.me/anna_english_tutor" target="_blank">@anna_english_tutor</a>
+            </div>
+            <div class="contact-item">
+              <strong>📞 Телефон:</strong>
+              <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+            </div>
+            <div class="contact-item">
+              <strong>🕒 Графік роботи:</strong>
+              <span>Пн-Пт: 9:00-20:00<br>Сб-Нд: 10:00-18:00</span>
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form" role="form" aria-label="Форма запису на заняття">
+            <div class="form-group">
+              <label for="name" class="sr-only">Ваше ім'я</label>
+              <input type="text" name="name" id="name" placeholder="Ваше імʼя" required aria-describedby="name-error">
+              <span class="error-message" id="name-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" required aria-describedby="email-error">
+              <span class="error-message" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="sr-only">Телефон</label>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон (необов'язково)" aria-describedby="phone-error">
+              <span class="error-message" id="phone-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="service" class="sr-only">Оберіть послугу</label>
+              <select name="service" id="service" required aria-describedby="service-error">
+                <option value="">Оберіть послугу</option>
+                <option value="trial">Пробний урок</option>
+                <option value="individual">Індивідуальні заняття</option>
+                <option value="exam">Підготовка до іспитів</option>
+                <option value="club">Розмовний клуб</option>
+              </select>
+              <span class="error-message" id="service-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Повідомлення</label>
+              <textarea name="message" id="message" rows="4" placeholder="Коротко про ваші цілі та рівень англійської" aria-describedby="message-error"></textarea>
+              <span class="error-message" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button class="btn" type="submit" aria-describedby="submit-status">
+              <span class="btn-text">Надіслати заявку</span>
+              <span class="btn-loading" style="display: none;">Відправляємо...</span>
+            </button>
+            <div id="submit-status" class="sr-only" aria-live="polite"></div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      © 2025 English Tutor. Зроблено з турботою.
+      <div class="footer-content">
+        <div class="footer-info">
+          <h4>Анна - Репетитор англійської мови</h4>
+          <p class="open-sans">Професійне вивчення англійської мови онлайн</p>
+        </div>
+        <div class="social-links">
+          <a href="https://t.me/anna_english_tutor" target="_blank" aria-label="Telegram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.61 7.59c-.12.54-.44.68-.89.42l-2.46-1.81-1.19 1.15c-.13.13-.24.24-.49.24l.18-2.55 4.57-4.13c.2-.18-.04-.28-.31-.1l-5.64 3.55-2.43-.76c-.53-.16-.54-.53.11-.79l9.57-3.69c.44-.16.83.1.69.79z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/anna_english_tutor" target="_blank" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="mailto:anna.english.tutor@gmail.com" aria-label="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Анна - Репетитор англійської мови. Зроблено з турботою.</p>
+      </div>
     </div>
   </footer>
 
   <script>
+    // Мобільне меню
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const body = document.body;
+
+    mobileMenuToggle.addEventListener('click', function() {
+      const isActive = navMenu.classList.contains('active');
+      
+      if (isActive) {
+        navMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenuToggle.setAttribute('aria-label', 'Відкрити меню');
+        body.style.overflow = '';
+      } else {
+        navMenu.classList.add('active');
+        mobileMenuToggle.classList.add('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'true');
+        mobileMenuToggle.setAttribute('aria-label', 'Закрити меню');
+        body.style.overflow = 'hidden';
+      }
+    });
+
+    // Закрити меню при кліку на посилання
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenuToggle.setAttribute('aria-label', 'Відкрити меню');
+        body.style.overflow = '';
+      });
+    });
+
+    // Закрити меню при кліку поза ним
+    document.addEventListener('click', function(e) {
+      if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenuToggle.setAttribute('aria-label', 'Відкрити меню');
+        body.style.overflow = '';
+      }
+    });
+
     // Smooth scroll для навігації
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
@@ -148,6 +345,101 @@
     }, appearOptions);
 
     faders.forEach(fader => { appearOnScroll.observe(fader); });
+
+    // Валідація форми
+    const contactForm = document.getElementById('contactForm');
+    
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+    
+    function validatePhone(phone) {
+      if (!phone) return true; // телефон необов'язковий
+      const re = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+      return re.test(phone);
+    }
+    
+    function showError(field, message) {
+      const errorElement = field.parentNode.querySelector('.error-message');
+      errorElement.textContent = message;
+      field.style.borderColor = '#ef4444';
+    }
+    
+    function clearError(field) {
+      const errorElement = field.parentNode.querySelector('.error-message');
+      errorElement.textContent = '';
+      field.style.borderColor = 'var(--border)';
+    }
+    
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(contactForm);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const service = formData.get('service');
+      const message = formData.get('message');
+      
+      let isValid = true;
+      
+      // Валідація імені
+      if (!name || name.trim().length < 2) {
+        showError(contactForm.querySelector('input[name="name"]'), 'Введіть коректне ім\'я (мінімум 2 символи)');
+        isValid = false;
+      } else {
+        clearError(contactForm.querySelector('input[name="name"]'));
+      }
+      
+      // Валідація email
+      if (!email || !validateEmail(email)) {
+        showError(contactForm.querySelector('input[name="email"]'), 'Введіть коректний email');
+        isValid = false;
+      } else {
+        clearError(contactForm.querySelector('input[name="email"]'));
+      }
+      
+      // Валідація телефону
+      if (phone && !validatePhone(phone)) {
+        showError(contactForm.querySelector('input[name="phone"]'), 'Введіть коректний номер телефону');
+        isValid = false;
+      } else {
+        clearError(contactForm.querySelector('input[name="phone"]'));
+      }
+      
+      // Валідація послуги
+      if (!service) {
+        showError(contactForm.querySelector('select[name="service"]'), 'Оберіть послугу');
+        isValid = false;
+      } else {
+        clearError(contactForm.querySelector('select[name="service"]'));
+      }
+      
+      // Валідація повідомлення
+      if (!message || message.trim().length < 10) {
+        showError(contactForm.querySelector('textarea[name="message"]'), 'Опишіть ваші цілі (мінімум 10 символів)');
+        isValid = false;
+      } else {
+        clearError(contactForm.querySelector('textarea[name="message"]'));
+      }
+      
+      if (isValid) {
+        // Показуємо індикатор завантаження
+        const btnText = contactForm.querySelector('.btn-text');
+        const btnLoading = contactForm.querySelector('.btn-loading');
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        
+        // Симуляція відправки (тут можна додати реальну відправку на сервер)
+        setTimeout(() => {
+          alert('Дякуємо за заявку! Ми з вами зв\'яжемося протягом 24 годин.');
+          contactForm.reset();
+          btnText.style.display = 'inline';
+          btnLoading.style.display = 'none';
+        }, 2000);
+      }
+    });
   </script>
 </body>
 </html>
